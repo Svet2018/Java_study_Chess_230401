@@ -1,5 +1,7 @@
 package src.main.java;
 
+import java.util.Scanner;
+
 public class BasePlayer {
     private String namePlayer;
     private String idPlayer;
@@ -8,27 +10,40 @@ public class BasePlayer {
     private int agePlayer;
 
     public BasePlayer(String namePlayer, String idPlayer, boolean white, int rankPlayer, int agePlayer) {
-        this.namePlayer = namePlayer;
-        this.idPlayer = idPlayer;
+        if (namePlayer == null || namePlayer.isBlank() || namePlayer.isEmpty()){
+            throw new IllegalArgumentException("The name of the player shoud not be empty");
+        }else {
+            this.namePlayer = namePlayer;
+        }
+
+        if (idPlayer == null || idPlayer.isBlank() || idPlayer.isEmpty()){
+            throw new IllegalArgumentException("The ID of the player shoud not be empty");
+        }else {
+            this.idPlayer = idPlayer;
+        }
+
         this.white = white;
-        this.rankPlayer = rankPlayer;
-        this.agePlayer = agePlayer;
+
+        if (rankPlayer < 0 || rankPlayer > 3000){
+            throw new IllegalArgumentException("The rank of the player out of the range");
+        }else {
+            this.rankPlayer = rankPlayer;
+        }
+
+        if (agePlayer < 18){
+            throw new IllegalArgumentException("The player is too yang");
+        }else if (agePlayer > 100){
+            throw new IllegalArgumentException("The player is too old");
+        } else {this.agePlayer = agePlayer;}
+
     }
 
     public String getNamePlayer() {
         return namePlayer;
     }
 
-    public void setNamePlayer(String namePlayer) {
-        this.namePlayer = namePlayer;
-    }
-
     public String getIdPlayer() {
         return idPlayer;
-    }
-
-    public void setIdPlayer(String idPlayer) {
-        this.idPlayer = idPlayer;
     }
 
     public boolean isWhite() {
@@ -44,7 +59,12 @@ public class BasePlayer {
     }
 
     public void setRankPlayer(int rankPlayer) {
+        if (rankPlayer < 0 || rankPlayer > 3000){
+            throw new IllegalArgumentException("Rank out of the range");
+        }
         this.rankPlayer = rankPlayer;
+        System.out.println("Rank of " + namePlayer + " was changed and = " + rankPlayer);
+
     }
 
     public int getAgePlayer() {
@@ -62,6 +82,6 @@ public class BasePlayer {
                 "ID номер = " + idPlayer + ", \n" +
                 "Белые фигуры = " + white + ", \n" +
                 "Ранг игрока = " + rankPlayer + ", \n" +
-                "Возраст игрока = " + agePlayer;
+                "Возраст игрока = " + agePlayer + ". \n";
     }
 }
