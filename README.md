@@ -3,7 +3,7 @@
 *Курс Льва Горфель:* https://cloud.mail.ru/public/kQPx/xCGXTDapq<br>
 План курса:<br>
 1. Введение (о чем курс): https://cloud.mail.ru/public/t7E2/jo2KSfsVk<br>
-2. О курсе: https://cloud.mail.ru/public/M4Vk/m4Da1seVN<br>
+2. О курсе (о чем курс): https://cloud.mail.ru/public/M4Vk/m4Da1seVN<br>
 3. Инструменты: https://cloud.mail.ru/public/aJnU/pDrDhAp77<br>
 4. Chess: https://cloud.mail.ru/public/ReuT/A2bDdKzT8<br>
 5. Дизайн игры: https://cloud.mail.ru/public/fM8Z/CLX5iLeBB<br>
