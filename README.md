@@ -6,7 +6,7 @@
 2. О курсе (о чем курс): https://cloud.mail.ru/public/M4Vk/m4Da1seVN<br>
 3. Инструменты (установка JDK с сайта https://www.oracle.com/cis/java/technologies/downloads/; установка Jntelij Idea с сайта https://www.jetbrains.com/ru-ru/idea/): https://cloud.mail.ru/public/aJnU/pDrDhAp77<br>
 4. Chess (ссылка на pdf картинку шахматной доски): https://cloud.mail.ru/public/ReuT/A2bDdKzT8<br>
-5. Дизайн игры (Этапы программирования: планирование, ): https://cloud.mail.ru/public/fM8Z/CLX5iLeBB<br>
+5. Дизайн игры (Этапы программирования: планирование, использовать UMI https://www.lucidchart.com/pages/, зарегистрироваться на нем): https://cloud.mail.ru/public/fM8Z/CLX5iLeBB<br>
 6. Переменные класса: https://cloud.mail.ru/public/QkSZ/gFPZ1Jy2K<br>
 7. Констрктор класса: https://cloud.mail.ru/public/dhze/UNmqt3LrZ<br>
 8. Методы Get: https://cloud.mail.ru/public/mLx5/td7VQuMmb<br>
