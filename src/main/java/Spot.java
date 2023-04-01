@@ -27,7 +27,7 @@ public class Spot {
 
     @Override
     public String toString() {
-        return "x = '" + x + '\'' +
+        return " x = '" + x + '\'' +
                 ", y = " + y;
     }
 }

@@ -1,6 +1,7 @@
 package src.main.java;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class Main {
@@ -33,11 +34,11 @@ public class Main {
             System.out.println();
         }
 
-        List<BasePiece> pieces = main.createPieces();
-        for (BasePiece piece : pieces){
-            System.out.println(pieces + " ");
-            System.out.println();
-        }
+        HashMap<Integer, BasePiece> pieces = main.createPieces();
+        System.out.println(pieces);
+        main.play(players, pieces);
+
+
 //
 
     }
@@ -52,19 +53,27 @@ public class Main {
         return playersList;
     }
 
-    public List<BasePiece> createPieces(){
+    public HashMap<Integer, BasePiece> createPieces(){
         King whiteKing = new King(new Spot("h", 7), 1, true);
         King blackKing = new King(new Spot("d", 8), 2, false);
         Rook whiteRook_1 = new Rook(new Spot("a", 7),3, true);
         Rook whiteRook_2 = new Rook(new Spot("g", 7),4, true);
         Knight blackKnight_1 = new Knight(new Spot("d", 6), 5, false);
-        List<BasePiece> piecesList = new ArrayList<>();
-        piecesList.add(whiteKing);
-        piecesList.add(blackKing);
-        piecesList.add(whiteRook_1);
-        piecesList.add(whiteRook_2);
-        piecesList.add(blackKnight_1);
-        return piecesList;
+        HashMap<Integer, BasePiece> piecesHashMap = new HashMap<>();
+        piecesHashMap.put(whiteKing.getId(), whiteKing);
+        piecesHashMap.put(blackKing.getId(), blackKing);
+        piecesHashMap.put(whiteRook_1.getId(), whiteRook_1);
+        piecesHashMap.put(whiteRook_2.getId(), whiteRook_2);
+        piecesHashMap.put(blackKnight_1.getId(), blackKnight_1);
+        return piecesHashMap;
+    }
+
+    public void play(List<BasePlayer> players, HashMap<Integer, BasePiece> hashMap) {
+        // move 1
+        players.get(0).movePiece(hashMap.get(1), new Spot("a", 8));
+        players.get(1).movePiece(hashMap.get(5), new Spot("c", 8));
 
     }
+
+
 }

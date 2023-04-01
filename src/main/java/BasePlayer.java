@@ -75,6 +75,11 @@ public class BasePlayer {
         this.agePlayer = agePlayer;
     }
 
+    public void movePiece(BasePiece piece, Spot spot){
+        piece.setSpot(spot);
+        System.out.println("Piece " + piece.getName() + " is moved on the" + spot + " spot");
+    }
+
     @Override
     public String toString() {
         return "Данные игрока: \n" +
