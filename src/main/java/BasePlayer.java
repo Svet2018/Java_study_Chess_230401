@@ -54,4 +54,14 @@ public class BasePlayer {
     public void setAgePlayer(int agePlayer) {
         this.agePlayer = agePlayer;
     }
+
+    @Override
+    public String toString() {
+        return "Данные игрока: \n" +
+                "Имя = " + namePlayer + ", \n" +
+                "ID номер = " + idPlayer + ", \n" +
+                "Белые фигуры = " + white + ", \n" +
+                "Ранг игрока = " + rankPlayer + ", \n" +
+                "Возраст игрока = " + agePlayer;
+    }
 }
