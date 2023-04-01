@@ -18,6 +18,11 @@
 14. Решаем задание 2 вместе: https://cloud.mail.ru/public/1NCV/gdfWnAoMN<br>
 15. Список игроков - ArrayList: https://cloud.mail.ru/public/PSpF/LmBdSPcKS<br>
 16. Абстрактные классы и наследование: https://cloud.mail.ru/public/GKFL/FqTmonie5<br>
+17. Самостоятельное задание 3: https://cloud.mail.ru/public/sQpx/SBZANuXqT<br>
+18. Решаем 3 задание вместе: https://cloud.mail.ru/public/PyV7/pLWViqGJB<br>
+19. Hash Map - работаем с фигурами: https://cloud.mail.ru/public/AxFo/1166Gx4jQ<br>
+20. Добавляем ходы фигурам: https://cloud.mail.ru/public/P7jR/iFCtbuA2q<br>
+21. Далее есть еще пункты, уже тесты кода
 
 
 
